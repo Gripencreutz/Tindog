@@ -1,0 +1,204 @@
+body{
+    --background-color-white: #fff;
+    --text-color-white: #fff;
+    --text-color-black: black;
+    --background-color-red: #ff4c68;
+    --background-color-orange: #ef8172;
+    --line-height: 1.5;
+    --transition-delay: 1s;
+    
+    font-family: 'Montserrat';
+}
+
+body.bluetheme{
+    --background-color-red: #2976A6;
+    --background-color-orange: #5FCDD9;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--text-color-white);
+    font-size: 3rem;
+    line-height: var(--line-height);
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+#title{
+    background-color: var(--background-color-red);
+    color: var(--text-color-white);
+    transition: var(--transition-delay);
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;
+}
+
+/* navbar */
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    line-height: var(--line-height);
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+}
+
+/* button */
+
+.download-button{
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+
+.title-image{
+    width: 60%;
+    transform: rotate(25deg);
+    margin-left: 4rem;
+    position: absolute;
+    right: 30%;
+}
+
+/* features */
+
+#features{
+    padding: 7% 15%;
+    background-color: var(--background-color-white);
+    position: relative;
+}
+
+#features p{
+    color: #8f8f8f;
+}
+
+#features i{
+    color: var(--background-color-orange);
+    padding-bottom: 1rem;
+    transition: var(--transition-delay);
+}
+
+#features i:hover{
+   color: var(--background-color-red);
+   transition: var(--transition-delay);
+}
+
+.feature-item{
+    text-align: center;
+    padding: 5%;
+}
+
+/* Testimonials */
+
+#testimonials{
+
+    background: var(--background-color-orange);
+    text-align: center;
+    transition: var(--transition-delay);
+}
+
+.carousel-item{
+    padding: 7% 15%;
+}
+
+.testimonial-image{
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+#press{
+    background: var(--background-color-orange);
+    text-align: center;
+    transition: var(--transition-delay);
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+/*pricing*/
+
+#pricing {
+    padding: 100px;
+    text-align: center;
+}
+
+#pricing h2{
+    color: black;
+}
+
+.pricing-column{
+    padding: 3% 2%;
+    
+}
+
+/* Cta */
+
+#cta{
+    background: var(--background-color-red);
+    text-align: center;
+    transition: var(--transition-delay);
+}
+
+#cta .container{
+    padding: 3% 10%;
+}
+
+/* footer */
+
+#footer{
+    background: var(--background-color-white);
+    text-align: center;
+}
+#footer .container{
+    padding: 5% 10%;
+}
+
+.icon-container i{
+    padding: 3% 1% 3% 0; 
+}
+
+
+/*media queries*/
+
+@media (max-width: 1028px){
+    .title-image{
+        position: static;
+        margin: 10% auto;
+    }
+
+    #title{
+        text-align: center;
+    }
+    .download-button{
+        margin: 5% 1% 5% 0;
+    }
+}
+
+@media (max-width: 990px){
+    .title-image{
+        transform: none;
+    }
+}
